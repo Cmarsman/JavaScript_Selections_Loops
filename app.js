@@ -4,7 +4,7 @@ console.log("Hello World!\n==========\n");
 console.log("EXERCISE 1:\n==========\n");
 
 for (let i = 0; i < 100; i++) {
-    if (i % 2 == 0) {
+    if (i % 2 === 0) {
         continue;
     } else {
         console.log(i);
@@ -14,12 +14,12 @@ for (let i = 0; i < 100; i++) {
 console.log("EXERCISE 2:\n==========\n");
 
 for (let i = 1; i < 100; i++) {
-    if ( i % 3 == 0 && i % 5 == 0) {
+    if ( i % 3 === 0 && i % 5 === 0) {
         console.log(i, "FIZZBUZZ");
     } else {
-        if (i % 3 == 0) {
+        if (i % 3 === 0) {
             console.log(i, "FIZZ");
-        } else if (i % 5 == 0) {
+        } else if (i % 5 === 0) {
                 console.log(i, "BUZZ");
         } else {
             console.log(i);
@@ -48,10 +48,10 @@ while (i < 100) {
 i = 1;
 while (i <= 100) {
     let output = "";
-    if (i % 3 == 0) {
+    if (i % 3 === 0) {
         output += "FIZZ";
     }
-    if (i % 5 == 0) {
+    if (i % 5 === 0) {
         output += "BUZZ";
     }
     if (output !== "") {
@@ -65,11 +65,11 @@ i = 1;
 do  {
     let output = "";
 
-    if (i % 3 == 0) {
+    if (i % 3 === 0) {
         output += "FIZZ";
     }
 
-    if (i % 5 == 0) {
+    if (i % 5 === 0) {
         output += "BUZZ";
     }
     if (output !== "") {
@@ -87,12 +87,12 @@ let value = Math.round((Math.random() * 500)); // creates a random number betwee
 let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
 
 for (let j = 0; i <= n; i++) {
-    if (j == value) {
+    if (j === value) {
         console.log(`Found ${value}!`);
         break;
     }
 
-    if (j == n) {
+    if (j === n) {
         console.log(`Did not find ${value} within range...`);
     }
 }
